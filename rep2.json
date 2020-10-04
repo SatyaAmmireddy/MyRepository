@@ -1,0 +1,88 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Finding the list of packages available in between the cities",
+        "description": "",
+        "id": "best-packages-in-makemytrip;finding-the-list-of-packages-available-in-between-the-cities;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20464743600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open the MakeMyTrip Application",
+            "match": {
+              "location": "StepDefination.i_open_the_MakeMyTrip_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19400362000,
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cdiv class\u003d\"calc60\"\u003e...\u003c/div\u003e is not clickable at point (223, 335). Other element would receive the click: \u003cdiv data-cy\u003d\"outsideModal\" class\u003d\"loginModal displayBlock modalLogin dynHeight personal \"\u003e\u003c/div\u003e\n  (Session info: chrome\u003d80.0.3987.87)\nBuild info: version: \u00273.141.0\u0027, revision: \u00272ecb7d9a\u0027, time: \u00272018-10-31T20:09:30\u0027\nSystem info: host: \u0027LAPTOP-MDPN47L1\u0027, ip: \u0027192.168.43.78\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00279.0.4\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\\Users\\SATHYA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:50555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 1e2fd2e5c45d78af3682a543e1b4c523\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat CucumberParameterizationStepDefination.StepDefination.i_pass_the_and_cities_and_perform_search(StepDefination.java:25)\r\n\tat ✽.When I pass the \"Chennai\" and \"Mumbai\" cities and perform search(CucumberParameterization.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I pass the \"Chennai\" and \"Mumbai\" cities and perform search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chennai",
+                  "offset": 12
+                },
+                {
+                  "val": "Mumbai",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefination.i_pass_the_and_cities_and_perform_search(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I see a list of packages available",
+            "match": {
+              "location": "StepDefination.i_see_a_list_of_packages_available()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Operations"
+          },
+          {
+            "line": 1,
+            "name": "@CucumberParameterization"
+          }
+        ]
+      }
+    ],
+    "name": "Best Packages in MakeMyTrip",
+    "description": "",
+    "id": "best-packages-in-makemytrip",
+    "keyword": "Feature",
+    "uri": "CucumberParameterization.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CucumberParameterization"
+      }
+    ]
+  }
+]
