@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="39.865106">
-    <testcase classname="Best Packages in MakeMyTrip" name="Finding the list of packages available in between the cities" time="39.865106">
-        <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;calc60&quot;&gt;...&lt;/div&gt; is not clickable at point (223, 335). Other element would receive the click: &lt;div data-cy=&quot;outsideModal&quot; class=&quot;loginModal displayBlock modalLogin dynHeight personal &quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=80.0.3987.87)&#10;Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'&#10;System info: host: 'LAPTOP-MDPN47L1', ip: '192.168.43.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\SATHYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 1e2fd2e5c45d78af3682a543e1b4c523&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at CucumberParameterizationStepDefination.StepDefination.i_pass_the_and_cities_and_perform_search(StepDefination.java:25)&#13;&#10;&#9;at ✽.When I pass the &quot;Chennai&quot; and &quot;Mumbai&quot; cities and perform search(CucumberParameterization.feature:7)&#13;&#10;">
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="298.920944">
+    <testcase classname="Best Packages in MakeMyTrip" name="Finding the list of packages available in between the cities" time="60.571721">
+        <system-out>
             <![CDATA[Given I open the MakeMyTrip Application.....................................passed
-When I pass the "Chennai" and "Mumbai" cities and perform search............failed
+When I pass the "Chennai" and "Mumbai" cities and perform search............passed
+Then I see a list of packages available.....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Best Packages in MakeMyTrip" name="Finding the list of packages available in between the cities 2" time="44.562855">
+        <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;calc60&quot;&gt;...&lt;/div&gt; is not clickable at point (214, 335). Other element would receive the click: &lt;div data-cy=&quot;outsideModal&quot; class=&quot;loginModal displayBlock modalLogin dynHeight personal &quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=80.0.3987.87)&#10;Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'&#10;System info: host: 'LAPTOP-MDPN47L1', ip: '192.168.43.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\SATHYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: c75667f4556a69be7c3711b4ee07499e&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at CucumberParameterizationStepDefination.StepDefination.i_pass_the_and_cities_and_perform_search(StepDefination.java:25)&#13;&#10;&#9;at ✽.When I pass the &quot;Hyderabad&quot; and &quot;Bangalore&quot; cities and perform search(CucumberParameterization.feature:7)&#13;&#10;">
+            <![CDATA[Given I open the MakeMyTrip Application.....................................passed
+When I pass the "Hyderabad" and "Bangalore" cities and perform search.......failed
 Then I see a list of packages available.....................................skipped
 
 StackTrace:
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="calc60">...</div> is not clickable at point (223, 335). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="calc60">...</div> is not clickable at point (214, 335). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
   (Session info: chrome=80.0.3987.87)
 Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
 System info: host: 'LAPTOP-MDPN47L1', ip: '192.168.43.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\SATHYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1e2fd2e5c45d78af3682a543e1b4c523
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\SATHYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c75667f4556a69be7c3711b4ee07499e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -27,8 +35,47 @@ Session ID: 1e2fd2e5c45d78af3682a543e1b4c523
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at CucumberParameterizationStepDefination.StepDefination.i_pass_the_and_cities_and_perform_search(StepDefination.java:25)
-	at ✽.When I pass the "Chennai" and "Mumbai" cities and perform search(CucumberParameterization.feature:7)
+	at ✽.When I pass the "Hyderabad" and "Bangalore" cities and perform search(CucumberParameterization.feature:7)
 ]]>
         </failure>
+    </testcase>
+    <testcase classname="Best Packages in MakeMyTrip" name="Finding the list of packages available in between the cities 3" time="50.589658">
+        <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;calc60&quot;&gt;...&lt;/div&gt; is not clickable at point (214, 335). Other element would receive the click: &lt;div data-cy=&quot;outsideModal&quot; class=&quot;loginModal displayBlock modalLogin dynHeight personal &quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=80.0.3987.87)&#10;Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'&#10;System info: host: 'LAPTOP-MDPN47L1', ip: '192.168.43.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\SATHYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: c279770ca0f2cd389a0bc45f96d00cc6&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at CucumberParameterizationStepDefination.StepDefination.i_pass_the_and_cities_and_perform_search(StepDefination.java:25)&#13;&#10;&#9;at ✽.When I pass the &quot;Pune&quot; and &quot;Delhi&quot; cities and perform search(CucumberParameterization.feature:7)&#13;&#10;">
+            <![CDATA[Given I open the MakeMyTrip Application.....................................passed
+When I pass the "Pune" and "Delhi" cities and perform search................failed
+Then I see a list of packages available.....................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="calc60">...</div> is not clickable at point (214, 335). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+  (Session info: chrome=80.0.3987.87)
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'LAPTOP-MDPN47L1', ip: '192.168.43.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\SATHYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c279770ca0f2cd389a0bc45f96d00cc6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at CucumberParameterizationStepDefination.StepDefination.i_pass_the_and_cities_and_perform_search(StepDefination.java:25)
+	at ✽.When I pass the "Pune" and "Delhi" cities and perform search(CucumberParameterization.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Best Packages in MakeMyTrip" name="Finding the list of packages available in between the cities 4" time="143.19671">
+        <system-out>
+            <![CDATA[Given I open the MakeMyTrip Application.....................................passed
+When I pass the "Nagpur" and "Ranchi" cities and perform search.............passed
+Then I see a list of packages available.....................................passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>
